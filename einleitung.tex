@@ -1,0 +1,67 @@
+\chapter{Einleitung}
+Vorab: Diese Vorlage basiert auf modernen \LaTeX--Paketen, u.\,A. auf Biblatex, Komascript, Glossaries, Booktabs, etc. 
+Sie benötigen daher eine aktuelle Installation. Kommentieren Sie die nicht benötigten Verzeichnisse (z.\,B. \texttt{listoflistings}) aus und passen Sie die Titelseite 
+entsprechend an. 
+
+Mit dem Befehl \texttt{autocite} kann zitiert werden, z.\,B. so\autocite[Vgl.][S. 18ff.]{Tanenbaum2012}.
+Ein Akronym kann man mit dem Befehl \texttt{ac} verwenden, z.\,B. so: \ac{DHBW}. Im weiteren Verlauf wird das 
+Acronym dann nur noch in der Kurzform dargestellt: \ac{DHBW}. Die Übernahme zitierter Quellen oder Akronyme in die 
+entsprechenden Verzeichnisse erfolgt automatisch. Das hier ist in \enquote{Text in Anführungszeichen}.
+
+Und das hier ist ein Absatz.
+
+
+
+\section{Unterabschnitt}
+\lipsum[1]
+
+\subsection{UnterUnterAbschnitt mit Tabelle}
+In Tabelle \vref{tab:tabelle1} ist eine Tabelle abgebildet, die mit dem Befehl \texttt{vref} referenziert wurde. Gleiches kann man auch mit Abbildungen 
+machen, wie z.\,B. mit der Abbildung \vref{fig:test}. \LaTeX~ kümmert sich darum, wo die Abbildungen gesetzt werden und passt den Text entsprechend an.
+In der Tabelle sind die Spalten mit einer Fixlänge von 3cm, zentriert, rechts- und linksbündig definiert. Abbildungen sollten -- falls möglich -- als Vektor-PDF eingebunden 
+werden, da die Abbildungen dann beliebig skalieren können.
+
+
+\lipsum[1-2]
+\begin{table}
+	\centering
+	\begin{tabular}{p{3cm}crl}
+		\textbf{Spalte 1} & \textbf{Spalte 2} & \textbf{Spalte 3} & \textbf{Spalte 4}\\\toprule
+		Zeile 1 Spalte 1 &  Zeile 1 Spalte 2 & Zeile 1 Spalte 3 & Zeile 1 Spalte 4\\
+		Zeile 2 Spalte 2 &  Zeile 2 Spalte 2 & Zeile 2 Spalte 3 & Zeile 2 Spalte 4\\\midrule
+		Zeile 3 Spalte 1 &  Zeile 3 Spalte 2 & Zeile 3 Spalte 3 & Zeile 3 Spalte 4\\
+		Zeile 4 Spalte 1 &  Zeile 4 Spalte 2 & Zeile 4 Spalte 3 & Zeile 4 Spalte 4\\\bottomrule
+	\end{tabular}
+	\caption[Testtabelle]{\label{tab:tabelle1}Testtabelle}
+\end{table}
+\lipsum[1-2]
+
+\begin{figure}
+	\centering 
+	\includegraphics{img/firmenlogo.jpg}
+	\captionsetup{format=hang}
+	\caption[Optionaler Kurztitel für das Abbildunggsverzeichnis]{\label{fig:test}Demo-Abbildung, um zu verdeutlichen, wie gleitende Objekte gesetzt werden und wie entsprechend die Quelle zitiert wird. \\Quelle: \cite[][S. 223]{Lamport1978}}
+\end{figure}
+	
+Das Einbinden eines Listings mit der entsprechenden Umgebung ist auch kein Problem, wie man in Listing \vref{lst:helloworld} sehen kann. Schauen Sie sich hierzu das \texttt{listings}-Paket an! 
+	
+	
+\lstset{language=Java}
+\begin{lstlisting}[caption={Hello World!}, label={lst:helloworld}]
+public static void main(String args[]) {
+   System.out.println("Hello World!");
+}
+\end{lstlisting}
+
+Auch mathematische Ausdrücke können mit \LaTeX~ sehr gut gesetzt werden, wie man anhand der Gleichungen \vref{eqn:e1} und \vref{eqn:e2} sehen kann. -- konsultieren Sie hierzu bitte entsprechende Dokumentationen, die Online zur Verfügung stehen.
+\begin{equation}
+\left|{1\over N}\sum_{n=1}^N \gamma(u_n)-{1\over 2\pi}\int_0^{2\pi}\gamma(t){\rm d}t\right| \le {\varepsilon\over 3}.\\
+\label{eqn:e1}
+\end{equation}
+
+\begin{equation}
+f(x)=x^2
+\label{eqn:e2}
+\end{equation}
+
+

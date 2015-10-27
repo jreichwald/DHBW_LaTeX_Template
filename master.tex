@@ -1,0 +1,60 @@
+%
+%   Prof. Dr. Julian Reichwald 
+%   DHBW Mannheim 
+%   
+
+\documentclass[
+	12pt,
+	BCOR=10mm,
+	headinclude=on,
+	footinclude=off,
+	parskip=half,
+	bibliography=totoc,
+	listof=entryprefix,
+	toc=listof, 
+	pointlessnumbers,
+	plainfootsepline]{scrreprt}
+
+%	Konfigurationsdatei einziehen
+\input{config}
+\makeglossaries
+
+\begin{document}
+\input{acronyms}
+
+\input{titlepage}
+
+
+\pagenumbering{roman}
+\normalfont
+
+%	Inhaltsverzeichnis 
+\tableofcontents
+
+%	Abbildungsverzeichnis 
+\listoffigures
+
+%	Tabellenverzeichnis 
+\listoftables
+
+%	Listingsverzeichnis 
+\lstlistoflistings 
+
+%	Abkürzungsverzeichnis 
+\printglossary[title=Abkürzungsverzeichnis,type=acronym]
+
+\newpage
+\pagenumbering{arabic}
+
+%	Einleitungs-Datei einziehen
+\input{einleitung}
+
+%	Literaturverzeichnis 	
+\printbibliography	
+
+%Appendix starts here - every chapter below \appendix is lettered 
+\appendix
+
+\include{appendix}
+
+\end{document}

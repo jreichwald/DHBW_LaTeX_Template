@@ -1,0 +1,90 @@
+%		FONT AND INPUT ENCODING 
+%
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+
+%		LANGUAGE SETTINGS
+%
+\usepackage[ngerman]{babel} 	%German Language 
+\usepackage[german=quotes]{csquotes} 	%Enable \enquote{} Statement for language-specific quotes 
+
+%
+%
+
+%Für englische Arbeiten 
+%\usepackage[ngerman]{english}
+
+%		BIBLIOGRAPHY SETTINGS
+%
+\usepackage[backend=biber, autocite=footnote, style=authoryear-icomp, dashed=false]{biblatex} 	%Define Bibliography style 
+\DefineBibliographyStrings{ngerman}{  %Change u.a. to et al. (german only!)
+	andothers = {{et\,al\adddot}},             
+} 
+\setlength{\bibparsep}{\parskip}		%add some space between biblatex entries in the bibliography
+\addbibresource{bibliography.bib}	%Add file bibliography.bib as biblatex resource 
+
+
+%		GLOSSARIES AND ACRONYMS
+%
+%\usepackage[acronym, nomain, nopostdot, nonumberlist, toc, xindy={language=german}, shortcuts]{glossaries}
+\usepackage[acronym, nopostdot, nonumberlist, toc, shortcuts]{glossaries}
+\renewcommand{\glsgroupskip}{}
+
+ \newglossarystyle{abkverz}{\setglossarystyle{super} 	
+ 	\renewcommand{\glossentry}[2]{% 
+ 		\hspace{-2mm}\textsf{\textbf{\glstarget{##1}{\glossentryname{##1}}}}% 
+ 		& \glossentrydesc{##1}% 
+ 		\tabularnewline % end of row
+ 	}%
+ }
+
+\setlength{\glsdescwidth}{.85\textwidth}
+\setglossarystyle{abkverz}
+
+\makeglossaries
+
+
+%		LISTINGS
+\usepackage{listings}	%Format Listings properly 
+\lstset{numbers=left,
+	numberstyle=\tiny,
+	captionpos=b,
+	basicstyle=\ttfamily\small}
+
+
+%		EXTRA PACKAGES 
+\usepackage{lipsum}    %Blind Text Generation
+\usepackage{graphicx} %Include graphics 
+\usepackage[german]{varioref} 	%Cross References made easy with \vref
+\usepackage{caption}	%Better Captions 
+\usepackage{todonotes} 	%Enter TODOs directly in text
+\usepackage{booktabs} %nicer tables 
+
+
+%		FONT SELECTION: Either use latin modern or Times / Helvetica combination
+\usepackage{lmodern} %Latin modern font 
+%\usepackage{mathptmx}  %Helvetica / Times New Roman fonts (2 lines)
+%\usepackage[scaled=.92]{helvet} %Helvetica / Times New Roman fonts (2 lines)
+
+
+%		PAGE HEADER / FOOTER 
+\RequirePackage[automark,headsepline,footsepline]{scrpage2}
+\pagestyle{scrheadings}
+\renewcommand*{\pnumfont}{\upshape\sffamily}
+\renewcommand*{\headfont}{\upshape\sffamily}
+\renewcommand*{\footfont}{\upshape\sffamily}
+\renewcommand{\chaptermarkformat}{}
+
+\clearscrheadfoot
+
+\ifoot[DHBW Mannheim]{DHBW Mannheim}
+\ofoot[\pagemark]{\pagemark}
+
+\ihead{\chaptername~\thechapter}
+\ohead{\headmark}
+
+
+
+
+
