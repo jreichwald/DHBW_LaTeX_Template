@@ -8,12 +8,8 @@
 %
 \usepackage[ngerman]{babel} 	%German Language 
 \usepackage[german=quotes]{csquotes} 	%Enable \enquote{} Statement for language-specific quotes 
+%\usepackage[ngerman]{english}   %Für englische Arbeiten
 
-%
-%
-
-%Für englische Arbeiten 
-%\usepackage[ngerman]{english}
 
 %		BIBLIOGRAPHY SETTINGS
 %
@@ -47,6 +43,7 @@
 
 %		LISTINGS
 \usepackage{listings}	%Format Listings properly 
+\renewcommand{\lstlistlistingname}{Quelltextverzeichnis}
 \lstset{numbers=left,
 	numberstyle=\tiny,
 	captionpos=b,
@@ -58,8 +55,14 @@
 \usepackage{graphicx} %Include graphics 
 \usepackage[german]{varioref} 	%Cross References made easy with \vref
 \usepackage{caption}	%Better Captions 
-\usepackage{todonotes} 	%Enter TODOs directly in text
 \usepackage{booktabs} %nicer tables 
+
+
+%		Algorithmen
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\renewcommand{\listalgorithmname}{Algorithmenverzeichnis }
+\floatname{algorithm}{Algorithmus}
 
 
 %		FONT SELECTION: Either use latin modern or Times / Helvetica combination

@@ -1,28 +1,66 @@
-\chapter{Einleitung}
-Vorab: Diese Vorlage basiert auf modernen \LaTeX--Paketen, u.\,A. auf Biblatex, Komascript, Glossaries, Booktabs, etc. 
-Sie benötigen daher eine aktuelle Installation. Kommentieren Sie die nicht benötigten Verzeichnisse (z.\,B. \texttt{listoflistings}) aus und passen Sie die Titelseite 
-entsprechend an. 
+\chapter{Gebrauchsanleitung}
+Diese Vorlage verwendet u.\,a. die folgenden Pakete und Programme: 
+\begin{itemize}
+	\item\texttt{KOMA-Script} und der Dokumentenklasse \texttt{scrreprt}
+	\item \texttt{babel} für die Spracheinstellungen
+	\item \texttt{csquotes} für sprachabhängige Anführungszeichen 
+	\item \texttt{glossaries} und \texttt{makeindex} für das Erstellen des Abkürzungsverzeichnisses 
+	\item \texttt{booktabs} für das typografisch korrekte Setzen von Tabellen 
+	\item \texttt{varioref} für einfaches Querreferenzieren 
+	\item \texttt{listings} für schöne Quelltexte
+	\item \texttt{algorithmicx} für schöne Algorithmen
+	\item \texttt{bibltatex} und \texttt{biber} für die Erstellung des Literaturverzeichnisses 
+\end{itemize}
+Alle Konfigurationen dieser Vorlage können in der Datei \texttt{config.tex} eingesehen und ggf. verändert werden. Bitte schauen Sie sich die entsprechenden Dokumentationen 
+der Pakete an (\url{https://www.ctan.org}), um deren Verwendung und Möglichkeiten jenseits der hier gezeigten Beispiele zu verstehen.
 
-Mit dem Befehl \texttt{autocite} kann zitiert werden, z.\,B. so\autocite[Vgl.][S. 18ff.]{Tanenbaum2012}.
+Die Datei \texttt{master.tex} ist die Hauptdatei, von der aus die anderen Dateien eingezogen werden. Die weiteren Dateien sind in Tabelle \vref{tab:dateien} beschrieben.
+ 
+\begin{table}
+	\centering
+\begin{tabular}{lp{10cm}}
+	\textbf{Dateiname} & \textbf{Beschreibung}\\\toprule
+	\texttt{config.tex} & Konfigurationseinstellungen der einzelnen Pakete\\
+	\texttt{acronyms.tex} & Definition von Abkürzungen. Fügen Sie die von Ihnen verwendeten Abkürzungen in diese Datei ein.\\
+	\texttt{titlepage.tex} & Titelseite der Arbeit. Passen Sie die Titelseite mit den entsprechenden Daten an.\\
+	\texttt{anleitung.tex} & Diese Anleitung\\ 
+	\texttt{bibliography.bib}&  Die Literaturdatenbank -- hier können SIe verwendete Literatur einpflegen.\\
+	\texttt{appendix.tex} & Anhang bzw. Anhänge \\\bottomrule
+\end{tabular}
+\caption{\label{tab:dateien}Übersicht über die Dateien der Vorlage}
+\end{table}
+
+\section{Grundsätzliches}
+
+Das Abkürzungsverzeichnis mittels des \texttt{glossaries}-Paketes muss mittels \texttt{makeindex} erstellt werden. Sollten ggf. Abkürzungen nicht im Verzeichnis enthalten sein,
+bitte löschen Sie die bei der Übersetzung des Dokumentes anfallenden temporären Dateien und führen Sie \texttt{pdflatex}, \texttt{biber} (für das Erstellen des Literaturverzeichnisses) sowie \texttt{makeindex} erneut aus.
+
+Mit dem Befehl \texttt{autocite} kann zitiert werden, z.\,B. so\autocite[Vgl.][S. 18ff.]{ME12}.
 Ein Akronym kann man mit dem Befehl \texttt{ac} verwenden, z.\,B. so: \ac{DHBW}. Im weiteren Verlauf wird das 
 Acronym dann nur noch in der Kurzform dargestellt: \ac{DHBW}. Die Übernahme zitierter Quellen oder Akronyme in die 
-entsprechenden Verzeichnisse erfolgt automatisch. Das hier ist in \enquote{Text in Anführungszeichen}.
+entsprechenden Verzeichnisse erfolgt automatisch. 
 
-Und das hier ist ein Absatz.
+Soll ein Text in Anführungszeichen gesetzt werden, kann dies  \enquote{so erreicht werden}. Die Anführungszeichen ändern sich automatisch auf die 
+jeweiligen Länderspezifika, wenn die Spracheinstellung des \texttt{babel}-Pakets geändert wird.
 
 
 
-\section{Unterabschnitt}
+
+\section{Beispiele}
 \lipsum[1]
 
-\subsection{UnterUnterAbschnitt mit Tabelle}
+\subsection{Unterabschnitte}
+Es gibt neben \texttt{chapter} auch noch  \texttt{section}, \texttt{subsection}, \texttt{subsubsection} etc. Eine zu starke Untergliederung des Textes sollte jedoch vermieden werden (z.\,B. ein Abschnitt 3.4.2.5.3). 
+
+\subsection{Tabellen und Abbildungen}
+Tabellen und Abbildungen sind sogenannte \textit{Floating Objects}, d.\,h. \LaTeX\ setzt diese Objekte an Positionen, die satztechnisch geeignet sind. Daher kann es vorkommen, dass Tabellen oder Abbildungen auf einer anderen Seite erscheinen, die dann referenziert werden müssen. Hier ein Beispiel dafür: 
+
 In Tabelle \vref{tab:tabelle1} ist eine Tabelle abgebildet, die mit dem Befehl \texttt{vref} referenziert wurde. Gleiches kann man auch mit Abbildungen 
-machen, wie z.\,B. mit der Abbildung \vref{fig:test}. \LaTeX~ kümmert sich darum, wo die Abbildungen gesetzt werden und passt den Text entsprechend an.
-In der Tabelle sind die Spalten mit einer Fixlänge von 3cm, zentriert, rechts- und linksbündig definiert. Abbildungen sollten -- falls möglich -- als Vektor-PDF eingebunden 
-werden, da die Abbildungen dann beliebig skalieren können.
+machen, wie z.\,B. mit der Abbildung \vref{fig:test}. \LaTeX~ kümmert sich darum, wo die Abbildungen gesetzt werden und passt den Text der Referenz entsprechend an. Soll nur die Nummerierung in den Text geschrieben werden, dann kann auch der Befehl \texttt{ref} verwendet werden.
+Abbildungen sollten -- falls möglich -- als Vektor-PDF eingebunden 
+werden, da die diese dann beliebig skalieren können.
 
-
-\lipsum[1-2]
+\lipsum[1]
 \begin{table}
 	\centering
 	\begin{tabular}{p{3cm}crl}
@@ -40,12 +78,13 @@ werden, da die Abbildungen dann beliebig skalieren können.
 	\centering 
 	\includegraphics{img/firmenlogo.jpg}
 	\captionsetup{format=hang}
-	\caption[Optionaler Kurztitel für das Abbildunggsverzeichnis]{\label{fig:test}Demo-Abbildung, um zu verdeutlichen, wie gleitende Objekte gesetzt werden und wie entsprechend die Quelle zitiert wird. \\Quelle: \cite[][S. 223]{Lamport1978}}
+	\caption[Optionaler Kurztitel für das Abbildunggsverzeichnis]{\label{fig:test}Demo-Abbildung, um zu verdeutlichen, wie gleitende Objekte gesetzt werden und wie entsprechend die Quelle zitiert wird. \\Quelle: \cite[][S. 223]{TD15}}
 \end{figure}
 	
+\subsection{Listings}	
+
 Das Einbinden eines Listings mit der entsprechenden Umgebung ist auch kein Problem, wie man in Listing \vref{lst:helloworld} sehen kann. Schauen Sie sich hierzu das \texttt{listings}-Paket an! 
-	
-	
+		
 \lstset{language=Java}
 \begin{lstlisting}[caption={Hello World!}, label={lst:helloworld}]
 public static void main(String args[]) {
@@ -53,7 +92,9 @@ public static void main(String args[]) {
 }
 \end{lstlisting}
 
-Auch mathematische Ausdrücke können mit \LaTeX~ sehr gut gesetzt werden, wie man anhand der Gleichungen \vref{eqn:e1} und \vref{eqn:e2} sehen kann. -- konsultieren Sie hierzu bitte entsprechende Dokumentationen, die Online zur Verfügung stehen.
+
+\subsection{Mathematische Formeln}
+Auch mathematische Ausdrücke können mit \LaTeX~ sehr gut gesetzt werden, wie man anhand der Gleichungen \vref{eqn:e1} und \vref{eqn:e2} sehen kann -- konsultieren Sie hierzu bitte entsprechende Dokumentationen, die Online zur Verfügung stehen.
 \begin{equation}
 \left|{1\over N}\sum_{n=1}^N \gamma(u_n)-{1\over 2\pi}\int_0^{2\pi}\gamma(t){\rm d}t\right| \le {\varepsilon\over 3}.\\
 \label{eqn:e1}
@@ -64,4 +105,25 @@ f(x)=x^2
 \label{eqn:e2}
 \end{equation}
 
+
+\subsection{Algorithmen}
+Algorithmen können als Pseudocodes dargestellt und referenziert werden, wie z.\,B. in Algorithmus \vref{alg:euclid} -- sogar bis auf Zeilennummern
+(siehe die \texttt{while}-Anweisung in Zeile \vref{alg:euclid:while}). Schauen Sie sich hierzu bitte das Paket \texttt{algorithmicx} an.
+
+
+
+\begin{algorithm}
+\begin{algorithmic}[1]
+\Procedure{Euclid}{$a,b$}\Comment{The g.c.d. of a and b}
+   \State $r\gets a\bmod b$
+   \While{$r\not=0$}\Comment{We have the answer if r is 0} \label{alg:euclid:while}
+      \State $a\gets b$
+      \State $b\gets r$
+      \State $r\gets a\bmod b$
+   \EndWhile\label{euclidendwhile}
+   \State \textbf{return} $b$\Comment{The gcd is b}
+\EndProcedure
+\end{algorithmic}
+\caption{Euklid'scher Algorithmus}\label{alg:euclid}
+\end{algorithm}
 
