@@ -4,7 +4,7 @@ Diese Vorlage verwendet u.\,a. die folgenden Pakete und Programme:
 	\item\texttt{KOMA-Script} und der Dokumentenklasse \texttt{scrreprt}
 	\item \texttt{babel} für die Spracheinstellungen
 	\item \texttt{csquotes} für sprachabhängige Anführungszeichen 
-	\item \texttt{glossaries} und \texttt{makeindex} für das Erstellen des Abkürzungsverzeichnisses 
+	\item \texttt{glossaries} und \texttt{makeindex} bzw. \texttt{makeglossaries} für das Erstellen des Abkürzungsverzeichnisses 
 	\item \texttt{booktabs} für das typografisch korrekte Setzen von Tabellen 
 	\item \texttt{varioref} für einfaches Querreferenzieren 
 	\item \texttt{listings} für schöne Quelltexte
@@ -33,7 +33,7 @@ Die Datei \texttt{master.tex} ist die Hauptdatei, von der aus die anderen Dateie
 \section{Grundsätzliches}
 
 Das Abkürzungsverzeichnis mittels des \texttt{glossaries}-Paketes muss mittels \texttt{makeindex} erstellt werden. Sollten ggf. Abkürzungen nicht im Verzeichnis enthalten sein,
-bitte löschen Sie die bei der Übersetzung des Dokumentes anfallenden temporären Dateien und führen Sie \texttt{pdflatex}, \texttt{biber} (für das Erstellen des Literaturverzeichnisses) sowie \texttt{makeindex} erneut aus.
+bitte löschen Sie die bei der Übersetzung des Dokumentes anfallenden temporären Dateien und führen Sie \texttt{pdflatex}, \texttt{biber} (für das Erstellen des Literaturverzeichnisses) sowie \texttt{makeindex} bzw. \texttt{makeglossaries} erneut aus.
 
 Mit dem Befehl \texttt{autocite} kann zitiert werden, z.\,B. so\autocite[Vgl.][S. 18ff.]{ME12}.
 Ein Akronym kann man mit dem Befehl \texttt{ac} verwenden, z.\,B. so: \ac{DHBW}. Im weiteren Verlauf wird das 
