@@ -30,7 +30,8 @@ Die Datei \texttt{master.tex} ist die Hauptdatei, von der aus die anderen Dateie
 \caption{\label{tab:dateien}Übersicht über die Dateien der Vorlage}
 \end{table}
 
-\section{Grundsätzliches}
+\section{Übersetzung von \LaTeX-Dateien}
+Die Übersetzung von \LaTeX-Dateien erfolgt in mehreren Schritten und unter der Zuhilfenahme unterschiedlicher Programme. Zum Übersetzen dieser Vorlage sind die Programme.
 
 Das Abkürzungsverzeichnis mittels des \texttt{glossaries}-Paketes muss mittels \texttt{makeindex} erstellt werden. Sollten ggf. Abkürzungen nicht im Verzeichnis enthalten sein,
 bitte löschen Sie die bei der Übersetzung des Dokumentes anfallenden temporären Dateien und führen Sie \texttt{pdflatex}, \texttt{biber} (für das Erstellen des Literaturverzeichnisses) sowie \texttt{makeindex} bzw. \texttt{makeglossaries} erneut aus.
@@ -84,6 +85,9 @@ werden, da die diese dann beliebig skalieren können.
 \subsection{Listings}	
 
 Das Einbinden eines Listings mit der entsprechenden Umgebung ist auch kein Problem, wie man in Listing \vref{lst:helloworld} sehen kann. Schauen Sie sich hierzu das \texttt{listings}-Paket an! 
+		
+		\newpage
+		
 		
 \lstset{language=Java}
 \begin{lstlisting}[caption={Hello World!}, label={lst:helloworld}]
