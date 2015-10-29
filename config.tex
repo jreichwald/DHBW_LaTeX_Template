@@ -29,23 +29,7 @@
 
 
 %		GLOSSARIES AND ACRONYMS
-%
-%\usepackage[acronym, nomain, nopostdot, nonumberlist, toc, xindy={language=german}, shortcuts]{glossaries}
-\usepackage[acronym, nopostdot, nonumberlist, toc, shortcuts, nomain, makeindex]{glossaries}
-\renewcommand{\glsgroupskip}{}
-
- \newglossarystyle{abkverz}{\setglossarystyle{super} 	
- 	\renewcommand{\glossentry}[2]{% 
- 		\hspace{-2mm}\textsf{\textbf{\glstarget{##1}{\glossentryname{##1}}}}% 
- 		& \glossentrydesc{##1}% 
- 		\tabularnewline % end of row
- 	}%
- }
-
-\setlength{\glsdescwidth}{.85\textwidth}
-\setglossarystyle{abkverz}
-
-\makeglossaries
+\usepackage[printonlyused]{acronym}
 
 
 %		LISTINGS

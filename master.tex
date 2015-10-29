@@ -17,13 +17,10 @@
 
 %	Konfigurationsdatei einziehen
 \input{config}
-\makeglossaries
 
 \begin{document}
-\input{acronyms}
 
 \input{titlepage}
-
 
 \pagenumbering{roman}
 \normalfont
@@ -43,11 +40,9 @@
 % 	Algorithmenverzeichnis
 \listofalgorithms
 
+% 	Abkürzungsverzeichnis
+\input{acronyms}
 
-
-
-%	Abkürzungsverzeichnis 
-\printglossary[title=Abkürzungsverzeichnis,type=acronym]
 
 \newpage
 \pagenumbering{arabic}
