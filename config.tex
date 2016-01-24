@@ -10,6 +10,9 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
+%
+%		CALCULATIONS 
+\usepackage{calc}
 
 %		LANGUAGE SETTINGS
 %
@@ -71,8 +74,8 @@
 
 \clearscrheadfoot
 
-\ifoot[DHBW Mannheim]{DHBW Mannheim}
-\ofoot[\pagemark]{\pagemark}
+\ifoot[\rule{0pt}{\ht\strutbox+\dp\strutbox}DHBW Mannheim]{\rule{0pt}{\ht\strutbox+\dp\strutbox}DHBW Mannheim}
+\ofoot[\rule{0pt}{\ht\strutbox+\dp\strutbox}\pagemark]{\rule{0pt}{\ht\strutbox+\dp\strutbox}\pagemark}
 
 \ihead{\chaptername~\thechapter}
 \ohead{\headmark}
