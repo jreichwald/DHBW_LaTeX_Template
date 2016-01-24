@@ -1,4 +1,6 @@
 *.bak
+*.fdb_latexmk
+*.fls
 *.out
 *.lol
 *.log
