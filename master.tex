@@ -1,14 +1,15 @@
 %
-%   Prof. Dr. Julian Reichwald  auf Basis einer Vorlage von Prof. Dr. Jörg Baumgart
+%   Prof. Dr. Julian Reichwald  
+%   auf Basis einer Vorlage von Prof. Dr. Jörg Baumgart
 %   DHBW Mannheim 
 %  
 %
-%	ACHTUNG:	Für das Erstellen des Literaturverzeichnisses wird das modernere Paket biblatex
-%						in Kombination mit biber verwendet -- nicht mehr das ältere BibTex!  
-% 						Bitte stellen Sie ggf. Ihre TeX-Umgebung 
-% 						entsprechend ein (z.B. TeXStudio: Einstellungen --> Erzeugen --> Standard Bibliographieprogramm: biber)
+%	ACHTUNG: Für das Erstellen des Literaturverzeichnisses wird das modernere Paket biblatex
+%			 in Kombination mit biber verwendet -- nicht mehr das ältere BibTex!  
+% 			 Bitte stellen Sie ggf. Ihre TeX-Umgebung 
+% 			 entsprechend ein (z.B. TeXStudio: Einstellungen --> Erzeugen --> Standard Bibliographieprogramm: biber)
 %
-%
+
 
 \documentclass[
 	12pt,
@@ -29,8 +30,12 @@
 
 \input{titlepage}
 
-\pagenumbering{roman}
+\pagenumbering{roman} % Römische Seitennummerierung
 \normalfont
+
+%--------------------------------
+% Verzeichnisse - nicht benötige Verzeichnisse bitte auskommentieren / löschen.
+%--------------------------------
 
 %	Inhaltsverzeichnis 
 \tableofcontents
@@ -47,12 +52,12 @@
 % 	Algorithmenverzeichnis
 \listofalgorithms
 
-% 	Abkürzungsverzeichnis
+% 	Abkürzungsverzeichnis (siehe Datei acronyms.tex!)
 \input{acronyms}
 
-
+\enquote{test}
 \newpage
-\pagenumbering{arabic}
+\pagenumbering{arabic}  % Arabische Seitenzahlen
 
 %	Einleitungs-Datei einziehen
 \input{anleitung}
@@ -60,7 +65,7 @@
 %	Literaturverzeichnis 	
 \printbibliography	
 
-%Appendix starts here - every chapter below \appendix is lettered 
+% Der Anhang beginnt hier - jedes Kapitel wird alphabetisch aufgezählt. (Anhang A, B usw.)
 \appendix
 
 \include{appendix}
