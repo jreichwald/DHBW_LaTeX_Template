@@ -1,4 +1,3 @@
-
 % 		HYPERREF
 \usepackage[
 	pdfauthor={Der Autor des Dokuments},
@@ -48,26 +47,27 @@
 
 
 %		EXTRA PACKAGES 
-\usepackage{lipsum}    %Blind-Text Generation
-\usepackage{graphicx} %Include graphics 
-\usepackage[german]{varioref} 	%Cross References made easy with \vref
-\usepackage{caption}	%Better Captions 
-\usepackage{booktabs} %nicer tables 
+\usepackage{lipsum}    %Blindtext
+\usepackage{graphicx} %Verschiedene Grafikformate einbinden  
+\usepackage[german]{varioref} 	%Bezüge etwas hübscher herstellen mit \vref
+\usepackage{caption}	%bessere Captions 
+\usepackage{booktabs} %schönere Tabellen
 
 
 %		Algorithmen
-\usepackage{algorithm}
+\usepackage{algorithm}  
 \usepackage{algpseudocode}
 \renewcommand{\listalgorithmname}{Algorithmenverzeichnis }
 \floatname{algorithm}{Algorithmus}
 
 
-%		FONT SELECTION: Either use latin modern or Times / Helvetica combination
+%		FONT SELECTION: Entweder Latin Modern oder Times / Helvetica
 \usepackage{lmodern} %Latin modern font 
 %\usepackage{mathptmx}  %Helvetica / Times New Roman fonts (2 lines)
 %\usepackage[scaled=.92]{helvet} %Helvetica / Times New Roman fonts (2 lines)
 
 %		PAGE HEADER / FOOTER 
+%	    Achtung: In einzelnen Abschnitten der master.tex - Datei wird ggf. der innere Header redefiniert! 
 \RequirePackage[automark,headsepline,footsepline]{scrpage2}
 \pagestyle{scrheadings}
 \renewcommand*{\pnumfont}{\upshape\sffamily}
@@ -80,7 +80,6 @@
 \ifoot[\rule{0pt}{\ht\strutbox+\dp\strutbox}DHBW Mannheim]{\rule{0pt}{\ht\strutbox+\dp\strutbox}DHBW Mannheim}
 \ofoot[\rule{0pt}{\ht\strutbox+\dp\strutbox}\pagemark]{\rule{0pt}{\ht\strutbox+\dp\strutbox}\pagemark}
 
-\ihead{\chaptername~\thechapter}
 \ohead{\headmark}
 
 

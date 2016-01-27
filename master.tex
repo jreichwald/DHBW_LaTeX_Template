@@ -55,21 +55,27 @@
 % 	Abkürzungsverzeichnis (siehe Datei acronyms.tex!)
 \input{acronyms}
 
-\enquote{test}
-\newpage
+%--------------------------------
+% Start des Textteils der Arbeit 
+%--------------------------------
+\clearpage 
+\ihead{\chaptername~\thechapter} % Neue Header-Definition
 \pagenumbering{arabic}  % Arabische Seitenzahlen
+
+
 
 %	Einleitungs-Datei einziehen
 \input{anleitung}
 
-
 %	Literaturverzeichnis 	
+\ihead{} % Neue Header-Definition 
 \printbibliography	
 
 % Der Anhang beginnt hier - jedes Kapitel wird alphabetisch aufgezählt. (Anhang A, B usw.)
 \appendix
+\ihead{\appendixname~\thechapter} % Neue Header-Definition
 
-\include{appendix}
+\input{appendix}
 
 % Ehrenwörtliche Erklärung
 \input{ewerkl.tex}
