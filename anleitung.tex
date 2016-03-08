@@ -1,44 +1,54 @@
+% !TEX root =  master.tex
 \chapter{Gebrauchsanleitung}
-Diese Vorlage verwendet u.\,a. die folgenden Pakete und Programme: 
-\begin{itemize}
-	\item\texttt{KOMA-Script} und der Dokumentenklasse \texttt{scrreprt}
-	\item \texttt{babel} für die Spracheinstellungen
-	\item \texttt{csquotes} für sprachabhängige Anführungszeichen 
-	\item \texttt{acronym} für das Erstellen des Abkürzungsverzeichnisses 
-	\item \texttt{booktabs} für das typografisch korrekte Setzen von Tabellen 
-	\item \texttt{varioref} für einfaches Querreferenzieren 
-	\item \texttt{listings} für schöne Quelltexte
-	\item \texttt{algorithmicx} für schöne Algorithmen
-	\item \texttt{bibltatex} und \texttt{biber} für die Erstellung des Literaturverzeichnisses 
-\end{itemize}
-Alle Konfigurationen dieser Vorlage können in der Datei \texttt{config.tex} eingesehen und ggf. verändert werden. Bitte schauen Sie sich die entsprechenden Dokumentationen 
-der Pakete an (\url{https://www.ctan.org}), um deren Verwendung und Möglichkeiten jenseits der hier gezeigten Beispiele zu verstehen.
-
-Die Datei \texttt{master.tex} ist die Hauptdatei, von der aus die anderen Dateien eingezogen werden. Die weiteren Dateien sind in Tabelle \vref{tab:dateien} beschrieben.
- 
-\begin{table}
+\section{Übersicht über die Vorlage}
+Diese Vorlage beinhaltet die folgenden, in Tabelle \vref{tab:dateien} aufgelisteten Dateien: 
+\begin{table}[h!]
 	\centering
 \begin{tabular}{lp{10cm}}
 	\textbf{Dateiname} & \textbf{Beschreibung}\\\toprule
-	\texttt{config.tex} & Konfigurationseinstellungen der einzelnen Pakete\\
-	\texttt{acronyms.tex} & Definition von Abkürzungen. Fügen Sie die von Ihnen verwendeten Abkürzungen in diese Datei ein.\\
-	\texttt{titlepage.tex} & Titelseite der Arbeit. Passen Sie die Titelseite mit den entsprechenden Daten an.\\
+	\texttt{master.tex} & Die Hauptdatei. Alle anderen Dateien werden von dieser Datei eingezogen. \\
+	\texttt{config.tex} & Konfigurationseinstellungen 	 der einzelnen Pakete\\
+	\texttt{acronyms.tex} & Definition von Abkürzungen. \\
+	\texttt{titlepage.tex} & Titelseite der Arbeit. \textbf{Bitte Anpassen!}\\
 	\texttt{anleitung.tex} & Diese Anleitung\\ 
-	\texttt{bibliography.bib}&  Die Literaturdatenbank -- hier können SIe verwendete Literatur einpflegen.\\
+	\texttt{bibliography.bib}&  Die Literaturdatenbank -- hier können Sie die verwendete Literatur einpflegen.\\
+	\texttt{ewerkl.tex} & Ehrenwörtliche Erklärung. \textbf{Bitte Anpassen!}\\
 	\texttt{appendix.tex} & Anhang bzw. Anhänge \\\bottomrule
 \end{tabular}
 \caption{\label{tab:dateien}Übersicht über die Dateien der Vorlage}
 \end{table}
 
+Es werden -- unter anderem -- die folgenden Zusatzpakete von dieser Vorlage eingezogen und sollten daher in aktuellen Versionen installiert sein: 
+\begin{itemize}
+	\item\texttt{KOMA-Script} bzw. die Dokumentenklasse \texttt{scrreprt}
+	\item\texttt{hyperref} für PDF-Informationen und Links 
+	\item \texttt{babel} für länderspezifische Einstellungen
+	\item \texttt{csquotes} für sprachabhängige Anführungszeichen (Befehl: \texttt{\textbackslash enquote})
+	\item \texttt{acronym} für das Erstellen des Abkürzungsverzeichnisses 
+	\item \texttt{booktabs} für das typografisch schöne Setzen von Tabellen 
+	\item \texttt{varioref} für einfaches Referenzieren 
+	\item \texttt{listings} für schöne Quelltexte
+	\item \texttt{algorithm} für schöne Algorithmen
+	\item \texttt{bibltatex} und \texttt{biber} für die Erstellung des Literaturverzeichnisses 
+\end{itemize}
+Alle Konfigurationen dieser Vorlage können in der Datei \texttt{config.tex} eingesehen und ggf. verändert werden. Bitte schauen Sie sich die entsprechenden Dokumentationen 
+der Pakete an (\url{https://www.ctan.org}), um deren Verwendung und Möglichkeiten jenseits der hier gezeigten Beispiele zu erlernen.
+
+ 
+
 \section{Übersetzung von \LaTeX-Dateien}
-Die Übersetzung von \LaTeX-Dateien erfolgt in mehreren Schritten und unter der Zuhilfenahme unterschiedlicher Programme. Zum Übersetzen dieser Vorlage sind die Programme.
+Die Übersetzung von \LaTeX-Dateien erfolgt in mehreren Schritten und unter der Zuhilfenahme unterschiedlicher Programme. Das Hauptdokument (hier die Datei \texttt{master.tex}) wird mittels \texttt{pdflatex} zu einem PDF übersetzt. Ggf. ist eine mehrfache Übersetzung notwendig, um z.\,B. das Inhaltsverzeichnis korrekt darzustellen. 
 
-Das Abkürzungsverzeichnis mittels des \texttt{glossaries}-Paketes muss mittels \texttt{makeindex} erstellt werden. Sollten ggf. Abkürzungen nicht im Verzeichnis enthalten sein,
-bitte löschen Sie die bei der Übersetzung des Dokumentes anfallenden temporären Dateien und führen Sie \texttt{pdflatex}, \texttt{biber} (für das Erstellen des Literaturverzeichnisses) sowie \texttt{makeindex} bzw. \texttt{makeglossaries} erneut aus.
+Für die Einbindung des Literaturverzeichnisses wird nicht mehr das ältere \texttt{bibtex}, sondern das neuere \texttt{biber} in Kombination mit \texttt{biblatex} verwendet. Bitte stellen Sie Ihren \LaTeX-Editor so ein, dass die Verwendung von Biber beim Übersetzungsprozess erfolgt. 
 
+\section{Verwendung von Akronymen}
+Akronyme müssen in der Datei \texttt{acronyms.tex} definiert werden (schauen Sie sich hierzu bitte die entsprechende Paket-Dokumentation an!)
+Ein definiertes Akronym kann dann mit dem Befehl \texttt{\textbackslash ac} verwenden, so wird z.\,B. \texttt{\textbackslash ac\{DHBW\}} zu \ac{DHBW}. Im weiteren Verlauf wird das 
+Acronym dann nur noch in der Kurzform dargestellt: \ac{DHBW}.
+
+\section{Zitieren von Quellen}
 Mit dem Befehl \texttt{autocite} kann zitiert werden, z.\,B. so\autocite[Vgl.][S. 18ff.]{ME12}.
-Ein Akronym kann man mit dem Befehl \texttt{ac} verwenden, z.\,B. so: \ac{DHBW}. Im weiteren Verlauf wird das 
-Acronym dann nur noch in der Kurzform dargestellt: \ac{DHBW}. Die Übernahme zitierter Quellen oder Akronyme in die 
+ Die Übernahme zitierter Quellen oder Akronyme in die 
 entsprechenden Verzeichnisse erfolgt automatisch. 
 
 Soll ein Text in Anführungszeichen gesetzt werden, kann dies  \enquote{so erreicht werden}. Die Anführungszeichen ändern sich automatisch auf die 

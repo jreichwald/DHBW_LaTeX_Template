@@ -1,4 +1,6 @@
+% !TEX root =  master.tex
 % 		HYPERREF
+%
 \usepackage[
 	pdfauthor={Der Autor des Dokuments},
 	pdftitle={Der Titel Ihrer Arbeit},
@@ -10,16 +12,17 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
-%
+
 %		CALCULATIONS 
-\usepackage{calc} % wird benötigt, um den kleinen Abstand nach der footsepline zu erzeugen
+%
+\usepackage{calc} % Used for extra space below footsepline
 
 %		LANGUAGE SETTINGS
 %
-\usepackage[ngerman]{babel} 	% Voreinstellung Deutsch 
-\usepackage[german=quotes]{csquotes} 	% Richtiges Setzen der Anführungszeichen mit \enquote{}  
+\usepackage[ngerman]{babel} 	% German language 
+\usepackage[german=quotes]{csquotes} 	% correct quotes using \enquote{}  
 
-%\usepackage[english]{babel}   %Für englische Arbeiten
+%\usepackage[english]{babel}   % For english language
 %\usepackage{csquotes} 	% Richtiges Setzen der Anführungszeichen mit \enquote{}  
 
 
@@ -48,13 +51,13 @@
 
 %		EXTRA PACKAGES 
 \usepackage{lipsum}    %Blindtext
-\usepackage{graphicx} %Verschiedene Grafikformate einbinden  
-\usepackage[german]{varioref} 	%Bezüge etwas hübscher herstellen mit \vref
-\usepackage{caption}	%bessere Captions 
-\usepackage{booktabs} %schönere Tabellen
+\usepackage{graphicx} % use various graphics formats  
+\usepackage[german]{varioref} 	% nicer references \vref
+\usepackage{caption}	%better Captions 
+\usepackage{booktabs} %nicer Tabs
 
 
-%		Algorithmen
+%		ALGORITHMS 
 \usepackage{algorithm}  
 \usepackage{algpseudocode}
 \renewcommand{\listalgorithmname}{Algorithmenverzeichnis }
@@ -67,7 +70,7 @@
 %\usepackage[scaled=.92]{helvet} %Helvetica / Times New Roman fonts (2 lines)
 
 %		PAGE HEADER / FOOTER 
-%	    Achtung: In einzelnen Abschnitten der master.tex - Datei wird ggf. der innere Header redefiniert! 
+%	    Warning: There are some redefinitions throughout the master.tex-file!  
 \RequirePackage[automark,headsepline,footsepline]{scrpage2}
 \pagestyle{scrheadings}
 \renewcommand*{\pnumfont}{\upshape\sffamily}
