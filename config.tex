@@ -28,10 +28,16 @@
 
 %		BIBLIOGRAPHY SETTINGS
 %
-\usepackage[backend=biber, autocite=footnote, style=authoryear-icomp, dashed=false]{biblatex} 	%Define Bibliography style 
+\usepackage[backend=biber, autocite=footnote, style=authoryear-icomp, dashed=false]{biblatex} 	%Use Author-Year-Cites with footnotes 
+% \usepackage[backend=biber, autocite=inline, style=ieee]{biblatex} 	% Use IEEE-Style (e.g. [1]) 
+% \usepackage[backend=biber, autocite=inline, style=alphabetic]{biblatex} 	% Use alphabetic style (e.g. [TGK12]) 
+% \usepackage[backend=biber, autocite=inline, style=authoryear, dashed=false]{biblatex} 	% Harvard-Style
+
+
 \DefineBibliographyStrings{ngerman}{  %Change u.a. to et al. (german only!)
 	andothers = {{et\,al\adddot}},             
 } 
+
 \setlength{\bibparsep}{\parskip}		%add some space between biblatex entries in the bibliography
 \addbibresource{bibliography.bib}	%Add file bibliography.bib as biblatex resource 
 

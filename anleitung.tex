@@ -29,7 +29,7 @@ Es werden -- unter anderem -- die folgenden Zusatzpakete von dieser Vorlage eing
 	\item \texttt{varioref} für einfaches Referenzieren 
 	\item \texttt{listings} für schöne Quelltexte
 	\item \texttt{algorithm} für schöne Algorithmen
-	\item \texttt{bibltatex} und \texttt{biber} für die Erstellung des Literaturverzeichnisses 
+	\item \texttt{bibltatex} und \texttt{biber} für die Erstellung des Literaturverzeichnisses.
 \end{itemize}
 Alle Konfigurationen dieser Vorlage können in der Datei \texttt{config.tex} eingesehen und ggf. verändert werden. Bitte schauen Sie sich die entsprechenden Dokumentationen 
 der Pakete an (\url{https://www.ctan.org}), um deren Verwendung und Möglichkeiten jenseits der hier gezeigten Beispiele zu erlernen.
@@ -44,15 +44,20 @@ Für die Einbindung des Literaturverzeichnisses wird nicht mehr das ältere \tex
 \section{Verwendung von Akronymen}
 Akronyme müssen in der Datei \texttt{acronyms.tex} definiert werden (schauen Sie sich hierzu bitte die entsprechende Paket-Dokumentation an!)
 Ein definiertes Akronym kann dann mit dem Befehl \texttt{\textbackslash ac} verwenden, so wird z.\,B. \texttt{\textbackslash ac\{DHBW\}} zu \ac{DHBW}. Im weiteren Verlauf wird das 
-Acronym dann nur noch in der Kurzform dargestellt: \ac{DHBW}.
+Acronym dann nur noch in der Kurzform dargestellt: \ac{DHBW}. Die Aufnahme eines verwendeten Akronyms in das Abkürzungsverzeichnis erfolgt automatisch.
 
 \section{Zitieren von Quellen}
-Mit dem Befehl \texttt{autocite} kann zitiert werden, z.\,B. so\autocite[Vgl.][S. 18ff.]{ME12}.
- Die Übernahme zitierter Quellen oder Akronyme in die 
-entsprechenden Verzeichnisse erfolgt automatisch. 
+Mit dem Befehl \texttt{\textbackslash autocite} kann zitiert werden, z.\,B. so \autocite[Vgl.][S. 18ff.]{ME12}. Wird \texttt{autocite} konsequent 
+verwendet, kann in der Datei \texttt{config.tex} der Zitationsstil umgeschaltet werden, ohne dass im Text Veränderungen vorgenommen werden müssen. Vorkonfigurierte Stile sind Alphabetic, Harvard, Fußnotenzitat und IEEE-Style. Die Übernahme der Quellen in das Literaturverzeichnis erfolgt automatisch.
 
-Soll ein Text in Anführungszeichen gesetzt werden, kann dies  \enquote{so erreicht werden}. Die Anführungszeichen ändern sich automatisch auf die 
-jeweiligen Länderspezifika, wenn die Spracheinstellung des \texttt{babel}-Pakets geändert wird.
+Soll einer Abbildung eine Quellenangabe zugefügt werden, bietet es sich an, diese direkt in der jeweiligen Abbildungsbeschriftung zu hinterlegen. Hierfür kann der Befehl \texttt{\textbackslash cite} verwendet werden, um eine ungewollte Fußnote zu vermeiden. Ein Beispiel ist in Abbildung 
+\vref{fig:test} zu sehen. 
+
+
+\section{Text in Anführungszeichen}
+Soll ein Text in Anführungszeichen gesetzt werden, kann dies über den Befehl \texttt{\textbackslash enquote} \enquote{so erreicht werden}. Die Anführungszeichen ändern sich automatisch auf die 
+jeweiligen Länderspezifika, wenn die Spracheinstellung des \texttt{babel}-Pakets geändert wird. Voreinstellung ist die deutsche Verwendung von 
+Anführungszeichen.
 
 
 
@@ -61,13 +66,13 @@ jeweiligen Länderspezifika, wenn die Spracheinstellung des \texttt{babel}-Paket
 \lipsum[1]
 
 \subsection{Unterabschnitte}
-Es gibt neben \texttt{chapter} auch noch  \texttt{section}, \texttt{subsection}, \texttt{subsubsection} etc. Eine zu starke Untergliederung des Textes sollte jedoch vermieden werden (z.\,B. ein Abschnitt 3.4.2.5.3). 
+Es gibt neben \texttt{\textbackslash chapter} auch noch  \texttt{\textbackslash section}, \texttt{\textbackslash subsection}, \texttt{\textbackslash subsubsection} etc. Eine zu starke Untergliederung des Textes sollte jedoch vermieden werden (z.\,B. ein Abschnitt 3.4.2.5.3). 
 
 \subsection{Tabellen und Abbildungen}
 Tabellen und Abbildungen sind sogenannte \textit{Floating Objects}, d.\,h. \LaTeX\ setzt diese Objekte an Positionen, die satztechnisch geeignet sind. Daher kann es vorkommen, dass Tabellen oder Abbildungen auf einer anderen Seite erscheinen, die dann referenziert werden müssen. Hier ein Beispiel dafür: 
 
-In Tabelle \vref{tab:tabelle1} ist eine Tabelle abgebildet, die mit dem Befehl \texttt{vref} referenziert wurde. Gleiches kann man auch mit Abbildungen 
-machen, wie z.\,B. mit der Abbildung \vref{fig:test}. \LaTeX~ kümmert sich darum, wo die Abbildungen gesetzt werden und passt den Text der Referenz entsprechend an. Soll nur die Nummerierung in den Text geschrieben werden, dann kann auch der Befehl \texttt{ref} verwendet werden.
+In Tabelle \vref{tab:tabelle1} ist eine Tabelle abgebildet, die mit dem Befehl \texttt{\textbackslash vref} referenziert wurde. Gleiches kann man auch mit Abbildungen 
+machen, wie z.\,B. mit der Abbildung \vref{fig:test}. \LaTeX~ kümmert sich darum, wo die Abbildungen gesetzt werden und passt den Text der Referenz entsprechend an. Soll nur die Nummerierung in den Text geschrieben werden, dann kann auch der Befehl \texttt{\textbackslash ref} verwendet werden.
 Abbildungen sollten -- falls möglich -- als Vektor-PDF eingebunden 
 werden, da die diese dann beliebig skalieren können.
 
