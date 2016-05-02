@@ -44,8 +44,20 @@
 \addbibresource{bibliography.bib}	%Add file bibliography.bib as biblatex resource 
 
 
-%		GLOSSARIES AND ACRONYMS
+%	ACRONYMS
+%%% 
+%%% WICHTIG: Installieren Sie das neueste Acronyms-Paket!!! 
+%%% 
+\makeatletter
 \usepackage[printonlyused]{acronym}
+\@ifpackagelater{acronym}{2015/03/20}
+  {%
+    \renewcommand*{\aclabelfont}[1]{\textbf{\textsf{\acsfont{#1}}}}  
+  }%
+  {%
+  }%
+\makeatother 
+
 
 
 %		LISTINGS
