@@ -30,11 +30,14 @@
 
 %		BIBLIOGRAPHY SETTINGS
 %
- \usepackage[backend=biber, autocite=footnote, style=authoryear-icomp, dashed=false]{biblatex} 	%Use Author-Year-Cites with footnotes 
+ \usepackage[backend=biber, autocite=footnote, style=authoryear, dashed=false]{biblatex} 	%Use Author-Year-Cites with footnotes 
 % \usepackage[backend=biber, autocite=inline, style=ieee]{biblatex} 	% Use IEEE-Style (e.g. [1]) 
 %\usepackage[backend=biber, autocite=inline, style=alphabetic]{biblatex} 	% Use alphabetic style (e.g. [TGK12]) 
 % \usepackage[backend=biber, autocite=inline, style=authoryear, dashed=false]{biblatex} 	% Harvard-Style
 
+% Count footnotes over chapters
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter}
 
 \DefineBibliographyStrings{ngerman}{  %Change u.a. to et al. (german only!)
 	andothers = {{et\,al\adddot}},             
