@@ -7,6 +7,11 @@
 	hidelinks=true % keine roten Markierungen bei Links
 ]{hyperref}
 
+% Two commands for defining title of the work
+\newcommand{\TitelDerArbeit}[1]{\def\DerTitelDerArbeit{#1}}
+\newcommand{\AutorDerArbeit}[1]{\def\DerAutorDerArbeit{#1}}
+
+
 %		FONT AND INPUT ENCODING 
 %
 \usepackage[T1]{fontenc}
@@ -78,6 +83,8 @@
 \usepackage[german]{varioref} 	% nicer references \vref
 \usepackage{caption}	%better Captions 
 \usepackage{booktabs} %nicer Tabs
+\usepackage{array}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 
 %		ALGORITHMS 
