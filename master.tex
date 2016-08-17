@@ -1,15 +1,14 @@
 %
-%   Prof. Dr. Julian Reichwald  
+%   Prof. Dr. Julian Reichwald
 %   auf Basis einer Vorlage von Prof. Dr. Jörg Baumgart
-%   DHBW Mannheim 
-%  
+%   DHBW Mannheim
+%
 %
 %	ACHTUNG: Für das Erstellen des Literaturverzeichnisses wird das modernere Paket biblatex
-%			 in Kombination mit biber verwendet -- nicht mehr das ältere BibTex!  
-% 			 Bitte stellen Sie ggf. Ihre TeX-Umgebung 
+%			 in Kombination mit biber verwendet -- nicht mehr das ältere BibTex!
+% 			 Bitte stellen Sie ggf. Ihre TeX-Umgebung
 % 			 entsprechend ein (z.B. TeXStudio: Einstellungen --> Erzeugen --> Standard Bibliographieprogramm: biber)
 %
-
 
 \documentclass[
 	12pt,
@@ -20,7 +19,7 @@
 	parskip=half,
 	bibliography=totoc,
 	listof=entryprefix,
-	toc=listof, 
+	toc=listof,
 	pointlessnumbers,
 	plainfootsepline]{scrreprt}
 
@@ -48,17 +47,17 @@
 %	Kurzfassung
 \input{abstract}
 
-%	Inhaltsverzeichnis 
+%	Inhaltsverzeichnis
 \tableofcontents
 
-%	Abbildungsverzeichnis 
+%	Abbildungsverzeichnis
 \listoffigures
 
-%	Tabellenverzeichnis 
+%	Tabellenverzeichnis
 \listoftables
 
-%	Listingsverzeichnis 
- \lstlistoflistings 
+%	Listingsverzeichnis
+ \lstlistoflistings
 
 % 	Algorithmenverzeichnis
 % \listofalgorithms
@@ -67,31 +66,29 @@
 \input{acronyms}
 
 %--------------------------------
-% Start des Textteils der Arbeit 
+% Start des Textteils der Arbeit
 %--------------------------------
-\clearpage 
+\clearpage
 \ihead{\chaptername~\thechapter} % Neue Header-Definition
 \pagenumbering{arabic}  % Arabische Seitenzahlen
 
-
-
-%	Einleitungs-Datei anleitung.tex einziehen. Auf diese Weise sollten Sie versuchen, für jedes einzelne 
-%   Kapitel eine eigene Datei anzulegen und mittels input-Kommando einzuziehen. 
+%	Anleitungs-Datei anleitung.tex einziehen. Auf diese Weise sollten Sie versuchen, für jedes einzelne
+% Kapitel eine eigene Datei anzulegen und mittels input-Kommando einzuziehen.
 \input{anleitung}
 
-%	Literaturverzeichnis 	
-\ihead{} % Neue Header-Definition 
-\printbibliography	
+%	Literaturverzeichnis
+\ihead{} % Neue Header-Definition
+\printbibliography
 
 
 % Der Anhang beginnt hier - jedes Kapitel wird alphabetisch aufgezählt. (Anhang A, B usw.)
 \appendix
 \ihead{\appendixname~\thechapter} % Neue Header-Definition
 
-% appendix.tex einziehen 
+% appendix.tex einziehen
 \input{appendix}
 
-% Ehrenwörtliche Erklärung ewerkl.tex einziehen 
+% Ehrenwörtliche Erklärung ewerkl.tex einziehen
 \input{ewerkl.tex}
 
 

@@ -9,32 +9,29 @@
 \newcommand{\TitelDerArbeit}[1]{\def\DerTitelDerArbeit{#1}\hypersetup{pdftitle={#1}}}
 \newcommand{\AutorDerArbeit}[1]{\def\DerAutorDerArbeit{#1}\hypersetup{pdfauthor={#1}}}
 
-%		FONT AND INPUT ENCODING 
+%		FONT AND INPUT ENCODING
 %
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-%\usepackage{setspace}
-%\onehalfspacing
 
-
-%		CALCULATIONS 
+%		CALCULATIONS
 %
 \usepackage{calc} % Used for extra space below footsepline
 
 %		LANGUAGE SETTINGS
 %
-\usepackage[ngerman]{babel} 	% German language 
-\usepackage[german=quotes]{csquotes} 	% correct quotes using \enquote{}  
+\usepackage[ngerman]{babel} 	% German language
+\usepackage[german=quotes]{csquotes} 	% correct quotes using \enquote{}
 
 %\usepackage[english]{babel}   % For english language
-%\usepackage{csquotes} 	% Richtiges Setzen der Anführungszeichen mit \enquote{}  
+%\usepackage{csquotes} 	% Richtiges Setzen der Anführungszeichen mit \enquote{}
 
 
 %		BIBLIOGRAPHY SETTINGS
 %
-\usepackage[backend=biber, autocite=footnote, style=authoryear, dashed=false]{biblatex} 	%Use Author-Year-Cites with footnotes 
-% \usepackage[backend=biber, autocite=inline, style=ieee]{biblatex} 	% Use IEEE-Style (e.g. [1]) 
-% \usepackage[backend=biber, autocite=inline, style=alphabetic]{biblatex} 	% Use alphabetic style (e.g. [TGK12]) 
+\usepackage[backend=biber, autocite=footnote, style=authoryear, dashed=false]{biblatex} 	%Use Author-Year-Cites with footnotes
+% \usepackage[backend=biber, autocite=inline, style=ieee]{biblatex} 	% Use IEEE-Style (e.g. [1])
+% \usepackage[backend=biber, autocite=inline, style=alphabetic]{biblatex} 	% Use alphabetic style (e.g. [TGK12])
 % \usepackage[backend=biber, autocite=inline, style=authoryear, dashed=false]{biblatex} 	% Harvard-Style
 
 % Count footnotes over chapters
@@ -42,29 +39,29 @@
 \counterwithout{footnote}{chapter}
 
 \DefineBibliographyStrings{ngerman}{  %Change u.a. to et al. (german only!)
-	andothers = {{et\,al\adddot}},             
-} 
+	andothers = {{et\,al\adddot}},
+}
 
 \setlength{\bibparsep}{\parskip}		%add some space between biblatex entries in the bibliography
-\addbibresource{bibliography.bib}	%Add file bibliography.bib as biblatex resource 
+\addbibresource{bibliography.bib}	%Add file bibliography.bib as biblatex resource
 
 
 %	ACRONYMS
-%%% 
-%%% WICHTIG: Installieren Sie das neueste Acronyms-Paket!!! 
-%%% 
+%%%
+%%% WICHTIG: Installieren Sie das neueste Acronyms-Paket!!!
+%%%
 \makeatletter
 \usepackage[printonlyused]{acronym}
 \@ifpackagelater{acronym}{2015/03/20}
   {%
-    \renewcommand*{\aclabelfont}[1]{\textbf{\textsf{\acsfont{#1}}}}  
+    \renewcommand*{\aclabelfont}[1]{\textbf{\textsf{\acsfont{#1}}}}
   }%
   {%
   }%
-\makeatother 
+\makeatother
 
 %		LISTINGS
-\usepackage{listings}	%Format Listings properly 
+\usepackage{listings}	%Format Listings properly
 \renewcommand{\lstlistlistingname}{Quelltextverzeichnis}
 \lstset{numbers=left,
 	numberstyle=\tiny,
@@ -72,30 +69,30 @@
 	basicstyle=\ttfamily\small}
 
 
-%		EXTRA PACKAGES 
+%		EXTRA PACKAGES
 \usepackage{lipsum}    %Blindtext
-\usepackage{graphicx} % use various graphics formats  
+\usepackage{graphicx} % use various graphics formats
 \usepackage[german]{varioref} 	% nicer references \vref
-\usepackage{caption}	%better Captions 
+\usepackage{caption}	%better Captions
 \usepackage{booktabs} %nicer Tabs
 \usepackage{array}
-\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+%\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
 
 
-%		ALGORITHMS 
-\usepackage{algorithm}  
+%		ALGORITHMS
+\usepackage{algorithm}
 \usepackage{algpseudocode}
 \renewcommand{\listalgorithmname}{Algorithmenverzeichnis }
 \floatname{algorithm}{Algorithmus}
 
 
 %		FONT SELECTION: Entweder Latin Modern oder Times / Helvetica
-\usepackage{lmodern} %Latin modern font 
+\usepackage{lmodern} %Latin modern font
 %\usepackage{mathptmx}  %Helvetica / Times New Roman fonts (2 lines)
 %\usepackage[scaled=.92]{helvet} %Helvetica / Times New Roman fonts (2 lines)
 
-%		PAGE HEADER / FOOTER 
-%	    Warning: There are some redefinitions throughout the master.tex-file!  
+%		PAGE HEADER / FOOTER
+%	    Warning: There are some redefinitions throughout the master.tex-file!  DON'T CHANGE THESE REDEFINITIONS!
 \RequirePackage[automark,headsepline,footsepline]{scrpage2}
 \pagestyle{scrheadings}
 \renewcommand*{\pnumfont}{\upshape\sffamily}
@@ -109,8 +106,3 @@
 \ofoot[\rule{0pt}{\ht\strutbox+\dp\strutbox}\pagemark]{\rule{0pt}{\ht\strutbox+\dp\strutbox}\pagemark}
 
 \ohead{\headmark}
-
-
-
-
-
