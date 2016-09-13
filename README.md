@@ -12,6 +12,7 @@ wissenschaftlichen Betreuer abgestimmt werden!
 ### Voraussetzungen
 
 Sie benötigen zunächst eine laufende LaTeX-Installation.
+
 * Windows-User: [MikTex](http://www.miktex.org)
 * Mac-User: [MacTex](http://www.tug.org/mactex/index.html)
 * Linux-User: [TexLive](http://www.tug.org/texlive/) (meist bei den Distributionen dabei)
