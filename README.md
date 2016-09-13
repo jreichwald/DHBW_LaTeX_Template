@@ -25,7 +25,7 @@ Vorschl채ge f체r LaTeX-Editoren:
 
 ### Installation der eigentlichen Vorlage
 
-Bitte laden Sie die Vorlage entweder als ZIP-Paket oder per `git clone`-Befehl auf Ihren Rechner. Im Falle eines ZIP-Downloads m체ssen Sie die ZIP-Datei entpacken. Die Vorlage selbst ist weitestgehend Standard-LaTeX und es existieren lediglich zwei selbst-definierte Befehle (siehe unten). In der Vorlage finden Sie viele Kommentare als auch ein Anleitungskapitel, welches die Arbeitsweise
+Bitte laden Sie die Vorlage entweder als ZIP-Paket oder per `git clone`-Befehl auf Ihren Rechner. Im Falle eines ZIP-Downloads m체ssen Sie die ZIP-Datei entpacken. Die Vorlage selbst ist weitestgehend Standard-LaTeX und es existieren lediglich zwei vorlagenspezifische Befehle, die _nicht_ im LaTeX-Standard enthalten sind [(siehe unten)](#markdown-header-vorlagenspezifische-befehle). In der Vorlage finden Sie viele Kommentare als auch ein Anleitungskapitel, welches die Arbeitsweise
 der Vorlage beschreibt, daher an dieser Stelle der Verweis auf die Vorlage selbst. Ebenfalls in der Vorlage enthalten sind
 Beispiele f체r das Zitieren von Quellen (Artikel, Buch, Online-Quelle, siehe Datei `bibliography.bib`).
 
@@ -43,7 +43,7 @@ Die Datei `config.tex` zieht relevate Pakete ein und konfiguriert diese. Hier k�
 auf [CTAN](http://www.ctan.org) erh채ltlichen Dokumentationen der verwendeten Pakete.
 
 
-## Selbst-definierte Befehle
+## Vorlagenspezifische Befehle
 - `\AutorDerArbeit{Max Mustermann}` setzt den Autor der Arbeit entsprechend auf *Max Mustermann*,
 - `\TitelDerArbeit{Ein Testtitel}`setzt den Titel der Arbeit auf *Ein Testtiitel*
 
