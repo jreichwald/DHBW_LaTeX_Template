@@ -34,9 +34,6 @@
 % \usepackage[backend=biber, autocite=inline, style=alphabetic]{biblatex} 	% Use alphabetic style (e.g. [TGK12])
 % \usepackage[backend=biber, autocite=inline, style=authoryear, dashed=false]{biblatex} 	% Harvard-Style
 
-% Count footnotes over chapters
-\usepackage{chngcntr}
-\counterwithout{footnote}{chapter}
 
 \DefineBibliographyStrings{ngerman}{  %Change u.a. to et al. (german only!)
 	andothers = {{et\,al\adddot}},
@@ -45,6 +42,12 @@
 \setlength{\bibparsep}{\parskip}		%add some space between biblatex entries in the bibliography
 \addbibresource{bibliography.bib}	%Add file bibliography.bib as biblatex resource
 
+
+%		FOOTNOTES 
+%
+% Count footnotes over chapters
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter}
 
 %	ACRONYMS
 %%%
