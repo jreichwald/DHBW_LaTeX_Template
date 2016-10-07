@@ -29,15 +29,23 @@
 
 %		BIBLIOGRAPHY SETTINGS
 %
-\usepackage[backend=biber, autocite=footnote, style=authoryear, dashed=false]{biblatex} 	%Use Author-Year-Cites with footnotes
+ \usepackage[backend=biber, autocite=footnote, style=authoryear, dashed=false]{biblatex} 	%Use Author-Year-Cites with footnotes
 % \usepackage[backend=biber, autocite=inline, style=ieee]{biblatex} 	% Use IEEE-Style (e.g. [1])
 % \usepackage[backend=biber, autocite=inline, style=alphabetic]{biblatex} 	% Use alphabetic style (e.g. [TGK12])
-% \usepackage[backend=biber, autocite=inline, style=authoryear, dashed=false]{biblatex} 	% Harvard-Style
 
+%%%% APA/Harvard-Style (bitte die nächten zwei Zeilen auskommentieren)
+%\usepackage[backend=biber, style=apa]{biblatex} 	
+%\DeclareLanguageMapping{german}{german-apa}
 
 \DefineBibliographyStrings{ngerman}{  %Change u.a. to et al. (german only!)
 	andothers = {{et\,al\adddot}},
 }
+
+%%% Uncomment the following lines to support hard URL breaks in bibliography 
+%\apptocmd{\UrlBreaks}{\do\f\do\m}{}{}
+%\setcounter{biburllcpenalty}{9000}% Kleinbuchstaben
+%\setcounter{biburlucpenalty}{9000}% Großbuchstaben
+
 
 \setlength{\bibparsep}{\parskip}		%add some space between biblatex entries in the bibliography
 \addbibresource{bibliography.bib}	%Add file bibliography.bib as biblatex resource
