@@ -25,7 +25,7 @@ Vorschläge für LaTeX-Editoren:
 
 ### Installation der eigentlichen Vorlage
 
-Bitte laden Sie die Vorlage entweder als ZIP-Paket oder per `git clone`-Befehl auf Ihren Rechner. Im Falle eines ZIP-Downloads müssen Sie die ZIP-Datei entpacken. Die Vorlage selbst ist weitestgehend Standard-LaTeX und es existieren lediglich zwei vorlagenspezifische Befehle, die _nicht_ im LaTeX-Standard enthalten sind [(siehe unten)](#markdown-header-vorlagenspezifische-befehle). In der Vorlage finden Sie viele Kommentare als auch ein Anleitungskapitel, welches die Arbeitsweise
+Bitte laden Sie die Vorlage entweder als ZIP-Paket oder per `git clone`-Befehl auf Ihren Rechner. Im Falle eines ZIP-Downloads müssen Sie die ZIP-Datei entpacken. Die Vorlage selbst ist weitestgehend Standard-LaTeX und es existieren lediglich vier vorlagenspezifische Befehle, die _nicht_ im LaTeX-Standard enthalten sind [(siehe unten)](#markdown-header-vorlagenspezifische-befehle). In der Vorlage finden Sie viele Kommentare als auch ein Anleitungskapitel, welches die Arbeitsweise
 der Vorlage beschreibt, daher an dieser Stelle der Verweis auf die Vorlage selbst. Ebenfalls in der Vorlage enthalten sind
 Beispiele für das Zitieren von Quellen (Artikel, Buch, Online-Quelle, siehe Datei `bibliography.bib`).
 
@@ -45,8 +45,10 @@ auf [CTAN](http://www.ctan.org) erhältlichen Dokumentationen der verwendeten Pa
 
 ## Vorlagenspezifische Befehle
 - `\AutorDerArbeit{Max Mustermann}` setzt den Autor der Arbeit entsprechend auf *Max Mustermann*,
-- `\TitelDerArbeit{Ein Testtitel}`setzt den Titel der Arbeit auf *Ein Testtiitel*
+- `\TitelDerArbeit{Ein Testtitel}` setzt den Titel der Arbeit auf *Ein Testtiitel*
+- `\DieFirma{Musterfirma GmbH}` setzt die Ausbildungsstätte auf *Musterfirma GmbH*
+- `\Kurs{WWI14SEA}` setzt den Kurs auf *WWI14SEA*
 
 Deckblatt, Kurzfassung und Selbständigkeitserklärung werden mit diesen Informationen
-befüllt und sollten an der entsprechenden Stelle in der Datei `master.tex`
-gesetzt werden.
+befüllt. Die Befehle müssen an der entsprechenden Stelle in der Datei `master.tex`
+gesetzt werden (siehe Vorlage).
