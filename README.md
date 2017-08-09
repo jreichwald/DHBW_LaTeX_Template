@@ -38,14 +38,15 @@ Die Datei `master.tex` ist die Hauptdatei der Vorlage, die übersetzt werden kan
 Dateien entsprechend eingezogen. Bitte schauen Sie sich die Kommentare in der Datei an, um ggf. nicht relevante
 Verzeichnisse (z.B. ein Algorithmenverzeichnis) auszublenden.
 
-Die Datei `config.tex` zieht relevate Pakete ein und konfiguriert diese. Hier können faktisch alle Eigenschaften der Vorlage
+Die Datei `config.tex` zieht relevante Pakete ein und konfiguriert diese. Hier können faktisch alle Eigenschaften der Vorlage
 (Zitierstil, Layout etc.) verändert werden. Beachten Sie auch hier die Kommentare in der Datei selbst sowie die im Internet
-auf [CTAN](http://www.ctan.org) erhältlichen Dokumentationen der verwendeten Pakete.
+auf [CTAN](http://www.ctan.org) erhältlichen Dokumentationen der verwendeten Pakete. Sollen bestimmte Eigenschaften der Vorlage
+angepasst werden, bitte setzen Sie sich __immer__ mit der Dokumentation auseinander!
 
 
 ## Vorlagenspezifische Befehle
 - `\AutorDerArbeit{Max Mustermann}` setzt den Autor der Arbeit entsprechend auf *Max Mustermann*,
-- `\TitelDerArbeit{Ein Testtitel}` setzt den Titel der Arbeit auf *Ein Testtiitel*
+- `\TitelDerArbeit{Ein Testtitel}` setzt den Titel der Arbeit auf *Ein Testtitel*
 - `\DieFirma{Musterfirma GmbH}` setzt die Ausbildungsstätte auf *Musterfirma GmbH*
 - `\Kurs{WWI14SEA}` setzt den Kurs auf *WWI14SEA*
 
