@@ -27,7 +27,7 @@ LaTeX editors tested with the template:
 ### Template Installation
 
 Clone/download the template to your machine and unpack it to a directory of your choice (in case of zip-Download).
-The template itself is pure LaTeX with only four template-specific commands which are _not_ LaTeX-Standard [(see below)](#markdown-header-vorlagenspezifische-befehle).
+The template itself is pure LaTeX with only four template-specific commands which are _not_ LaTeX-Standard [(see below)](#markdown-header-template-specific-commands).
 The template files are commented quite well and it also includes an instruction chapter which explains the basic usage of the template (actually, the instruction chapter is in German).
 Citation examples are included in the `bibliography.bib`-File (Article, Book, Online Reference).
 
@@ -46,4 +46,5 @@ packages and does some configuration stuff. Nearly every property or characteris
 - `\DieFirma{Musterfirma GmbH}` sets the Company to *Musterfirma GmbH*
 - `\Kurs{WWI14SEA}` sets the course lable to *WWI14SEA*
 
-Titlepage, abstract and statutory declaration will be filled with these information.
+Titlepage, abstract and statutory declaration will be filled with these information
+.
