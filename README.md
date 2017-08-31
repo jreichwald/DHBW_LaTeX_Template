@@ -1,6 +1,7 @@
 # LaTeX-Template for Project- and Bachelorthesis at DHBW Mannheim  
 
 ## General Notes
+* *Always use the latest version of this template!* 
 * This template *is just a sample!* Please adapt it to the requirements of your scientific advisor (i.e. adapt citation style, page margins etc.)
 * The template is written for a thesis in German, but can be adapted easily to other languages.
 * **Using this template requires basic knowledge of LaTeX! Please get used to it *before* you start writing!**
