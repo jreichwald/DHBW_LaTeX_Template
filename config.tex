@@ -12,6 +12,9 @@
 \newcommand{\Kurs}[1]{\def\DieKursbezeichnung{#1}}
 
 
+% Correct superscripts 
+\usepackage{fnpct}
+
 
 %		FONT AND INPUT ENCODING
 %
@@ -33,13 +36,22 @@
 
 %		BIBLIOGRAPHY SETTINGS
 %
- \usepackage[backend=biber, autocite=footnote, style=authoryear, dashed=false]{biblatex} 	%Use Author-Year-Cites with footnotes
+
+% Uncomment the next three lines for author-year-style with footnotes (Chicago)
+\usepackage[backend=biber, autocite=footnote, style=authoryear, dashed=false]{biblatex} 	%Use Author-Year-Cites with footnotes
+\AdaptNoteOpt\footcite\multfootcite   %will add  separators if footcite is called multiple consecutive times 
+\AdaptNoteOpt\autocite\multautocite % will add  separators if autocite is called multiple consecutive times
+
+% Uncomment the next line for IEEE-style 
 % \usepackage[backend=biber, autocite=inline, style=ieee]{biblatex} 	% Use IEEE-Style (e.g. [1])
+
+% Uncomment the next line for alphabetic style 
 % \usepackage[backend=biber, autocite=inline, style=alphabetic]{biblatex} 	% Use alphabetic style (e.g. [TGK12])
 
-%%%% APA/Harvard-Style (bitte die nächten zwei Zeilen auskommentieren)
+% Uncomment the next two lines vor Harvard-Style 
 %\usepackage[backend=biber, style=apa]{biblatex} 	
 %\DeclareLanguageMapping{german}{german-apa}
+
 
 \DefineBibliographyStrings{ngerman}{  %Change u.a. to et al. (german only!)
 	andothers = {{et\,al\adddot}},
