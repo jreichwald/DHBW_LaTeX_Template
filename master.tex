@@ -68,12 +68,14 @@
 
 % 	Abkürzungsverzeichnis (siehe Datei acronyms.tex!)
 \input{acronyms}
+\ohead{Acronyms} % Neue Header-Definition
 
 %--------------------------------
 % Start des Textteils der Arbeit
 %--------------------------------
 \clearpage
-\ihead{\chaptername~\thechapter} % Neue Header-Definition
+\ihead{\chaptername~\thechapter} % Neue Header-Definition (inner header)
+\ohead{\headmark} % Neue Header-Definition (outer header)
 \pagenumbering{arabic}  % Arabische Seitenzahlen
 
 %	Anleitungs-Datei anleitung.tex einziehen. Auf diese Weise sollten Sie versuchen, für jedes einzelne
