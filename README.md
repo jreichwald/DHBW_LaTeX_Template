@@ -5,6 +5,7 @@
 * __Always use the latest version of this template!__
 * The template is written for a thesis in German, but can be adapted easily to other languages.
 * **Using this template requires basic knowledge of LaTeX! Please get used to it *before* you start writing!**
+* [Here](hinweise-wissenschaftliche-arbeiten.md) are some general remarks (in German) on how to write your thesis.
 
 
 ## Installation Instructions
