@@ -1,8 +1,105 @@
 # Allgemeine Hinweise für das wissenschaftliche Arbeiten
 
-Dieses Dokument enthält Hinweise für die Erstellung wissenschaftlicher Arbeiten. Diese sollten beim Erstellen der Arbeit berücksichtigt werden. Die Liste der Hinweise ist weder vollständig noch erhebt sie den Anspruch, weiterführende Literatur zu wissenschaftlichem Arbeiten zu ersetzen.
+Dieses Dokument enthält Hinweise für die Erstellung wissenschaftlicher Arbeiten. Diese sollten beim Erstellen der Arbeit berücksichtigt werden. Die Liste der Hinweise ist weder vollständig noch erhebt sie den Anspruch weiterführende Literatur zu wissenschaftlichem Arbeiten zu ersetzen.
 
-## Wissenschaftliche Vorgehensweise
+In Projekt-, Bachelor- und Masterarbeiten setzen sich Studierende mit einer vorgegebenen fachlichen Fragestellung in entsprechender Tiefe und gemäß wissenschaftlicher Kriterien auseinander. Die Beantwortung der Fragestellung erfolgt im Rahmen einer schriftlichen Arbeit. 
+
+In den Arbeiten werden eigene Forschungen betrieben sowie eigene Ideen, Konzepte und Lösungen bereit gestellt, mit deren Hilfe letztendlich die Forschungsfrage beantwortet werden kann. 
+
+Eine mit wissenschaftlichen Kriterien durchgeführte Untersuchung, die zeigt, dass die Forschungsfrage nicht oder nicht in dem vorgegebenen Kontext beantwortet werden kann, ist auch ein mögliches Ergebnis des wissenschaftlichen Arbeitens.
+
+## Grundlegende Anforderungen an die Wissenschaftlichkeit von Abschlussarbeiten
+
+Gemäß den Darlegungen in [4].
+
+- Nachweis von im Studium erworbenen Fachkenntnissen 
+- Fähigkeit zum systematischen und methodisch korrekten Bearbeiten eines begrenzten Themas 
+- Nachweis der Selbständigkeit bei der Lösung einer vorgegebenen Aufgabe 
+- Fähigkeit zur Problematisierung und (Selbst-)Kritik 
+- Qualität der Ergebnisse - Neuartigkeit, Güte, Zuverlässigkeit 
+- Fähigkeit zur logischen und prägnanten Argumentation 
+- Formal korrekte Präsentation der Ergebnisse 
+
+## Übersicht der Kriterien 
+Prinzipiell setzt sich die Gesamtnote für die schriftliche Abschlussarbeit aus der inhaltlichen und formalen Bewertung zusammen. 
+
+### Die inhaltliche Bewertung 
+- Aufgabenstellung 
+  - Ist die Aufgabenstellung verstanden worden? 
+  - Sind alle wesentlichen Aspekte erfasst worden? 
+  - Ist der fachlich übergeordnete Zusammenhang klar? 
+  - Welche Bedeutung hat das Thema in der fachlichen Domäne (Wirtschaftsinformatik, Informatik, ...)? 
+- Thematische Eingrenzung 
+  -  Hat der Autor oder die Autorin thematische Abgrenzungen vorgenommen? 
+  - Werden wichtige Aspekte ausgelassen oder nur teilweise behandelt? 
+  - Ist eine eventuelle Reduktion auf bestimmte Hauptaspekte gut begründet? 
+- Literatur 
+  - Wird qualitativ angemessene Literatur herangezogen? 
+  - In welchem Umfang wird die Literatur im Text verwendet? 
+  - Ist die Literatur korrekt ausgewertet? Z. B. ohne Verfälschungen, auf dem letzten Stand.
+  - Werden in der fachlichen Domäne anerkannte Regeln der Zitiertechnik berücksichtigt? 
+- Methodik 
+  -  Welche Fachkenntnisse zeigt der Verfasser bei der Bildung eines Lösungsansatzes? 
+  - Wird die Wahl einer Methode zur Lösung der Aufgabe hinreichend begründet? 
+  - Wie wurde das Thema abgehandelt?  
+    - empirisch/ theoretisch 
+    - referierend/ vergleichend/ auswertend 
+    - eigene Untersuchungen/ Erhebungen 
+    - experimentell 
+  - Werden eventuell durchgeführte (Computer-)Berechnungen und Abschätzungen durch Plausibilitätsuntersuchungen kontrolliert? 
+- Gliederung 
+  - Ist die Gliederung inhaltlich verständlich, in Bezug auf das Thema logisch aufgebaut und aussagekräftig formuliert? 
+  - Ist ein Ziel zu erkennen? Liegt eine klare Linie vor? 
+- Lösungsweg 
+  - Ist die Argumentation folgerichtig, nachvollziehbar, vollständig, objektiv und sachlich? 
+  - Kommen einzelne Sachverhalte zu kurz? 
+  - Entspricht die Ausarbeitung dem gestellten Thema? 
+- Selbstständigkeit der Bearbeitung 
+  - Werden eigenständige Arbeitshypothesen entwickelt? 
+  - Werden eigenständige Bewertungen vorgenommen? 
+  - Auf welchem Niveau liegen die Eigenleistungen? Sind die Eigenüberlegungen belegt und erwiesen? 
+  - Werden schwierige Einzelfragen behandelt?  
+  - Ist zu erkennen, dass sich der Autor mit der Thematik ausreichend auseinandergesetzt hat? 
+  -  Werden Probleme erkannt? Findet eine kritische Auseinandersetzung mit den Problemen statt? 
+  - Werden Widersprüche zur Literatur oder Fragwürdigkeiten in der Literatur herausgearbeitet und aufzulösen versucht? 
+- Qualität der Ergebnisse 
+  - Sind die Ergebnisse klar formuliert? 
+  - Beantworten die Ergebnisse die Fragestellung ausreichend?  
+  - Handelt es sich um neue Erkenntnisse? Stellen sie einen sachlichen Fortschritt auf dem Gebiet der Aufgabenstellung dar?  
+  - Werden Argumentationen auf Grundlage von Belegen oder Beweisen entwickelt? 
+  - Sind die entwickelten Argumentationen lückenlos und in sich widerspruchsfrei? 
+  - Sind die Belege ausreichend recherchiert und die Beweise zuverlässig ermittelt? 
+
+### Die formale Bewertung 
+- Gliederung 
+  -  Ist die Gliederung formal korrekt und dem Umfang der Arbeit angemessen? 
+      - konsequente Klassifikation
+      - angemessene Gliederungstiefe
+      - richtige Zuordnung von Ober- und Unterpunkten, etc. 
+  - Wird die Lesbarkeit / Übersichtlichkeit durch eine gute Gliederung gefördert? 
+- Verzeichnisse 
+  - Werden die erforderlichen Verzeichnisse korrekt angelegt und an der jeweils richtigen Stelle der Arbeit platziert? 
+  - Werden alle im Text benutzten Quellen vollständig und korrekt im Literaturverzeichnis genannt?  
+  - Sind die Darstellungen - Abbildungen, Tabellen, etc. - korrekt durchnummeriert und beschriftet? 
+- Zitierweise 
+  - Wird der wissenschaftliche Zitierstil korrekt und der fachlichen Domäne entsprechend angewendet? 
+    - Z. B. Harvard, numerisch, alpha-numerisch, etc. in der Informatik und Wirtschaftsinformatik
+  - Ist eindeutig das übernommene und eigene Gedankengut zu erkennen? 
+- Gestaltung und Inhalt 
+  -  Ist eine Titelseite vorhanden und formal sowie inhaltlich korrekt dargestellt? 
+  - Ist eine eidesstattliche Erklärung unterschrieben und an der korrekten Stelle der Arbeit angelegt? 
+  - Sind die Titelseite, die Textvorlaufseiten, alle Textseiten und die Textnachlaufseiten in richtiger Aufteilung (Rand, Zeilenabstände) gut lesbar (Größe, Konturierung) gestaltet und in richtiger Form nummeriert? 
+  - Sind die Abbildungen und Tabellen sinnvoll gewählt und platziert? 
+- Sprache 
+  - Ist die Gedankenführung klar, inhaltlich aussagekräftig und logisch gegliedert? 
+  - Ist die Terminologie fachlich korrekt und der sprachliche Ausdruck einer wissenschaftlichen Arbeit angemessen? 
+  - Vermeidet die Arbeit Verstöße gegen die Regeln der Rechtschreibung, Grammatik oder Zeichensetzung? 
+- Abgabe der Arbeit 
+  - Ist die Arbeit in der festgesetzten Frist abgegeben worden? 
+  - Wurde die Arbeit in erforderlicher Anzahl gemäß Studien- oder Prüfungsordnung angemessen gedruckt (weißes Papier, DIN A4, gebunden oder geheftet, kartonierte Umschlagdeckel)? 
+  - Werden eventuelle formale Vorgaben (z. B. Seiten- oder Zeichenanzahl) eingehalten? 
+
+## Wissenschaftliche Vorgehensweise - weitere Details
 
 ### Konkrete wissenschaftliche Fragestellung herausarbeiten
 - Welche wissenschaftliche Frage wird in der Arbeit untersucht und mit wissenschaftlichen Methoden beantwortet?
@@ -72,7 +169,7 @@ Dieses Dokument enthält Hinweise für die Erstellung wissenschaftlicher Arbeite
   - Gibt es ein wissenschaftliches Gütekriterium und anerkannte Verfahren zur Messung der Güte einzelner Faktoren?
   - Wie kommt man zu dem Gütekriterium? 
  
-## Formale Kriterien
+## Formale Kriterien - weitere Details
 
 ### Anmeldung der wissenschaftlichen Arbeit 
 - Grundlegendes
@@ -112,14 +209,18 @@ Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigte
 - Fazit und Ausblick
 - Anhänge 
 - Literaturverzeichnis
+- Index (optional)
 
 #### Inhalte
 - Kurzfassung / Abstract
   - Kurzfassung der Arbeit
   - Darstellung der Zielsetzung, Ergebnisse und Relevanz der Arbeit
+  - eher kurz halten, optimal weniger als eine halbe Seite (DIN A4)
 - Sperrvermerk
-  - Ein gesonderter Sperrvermerk ist nicht notwendig. 
-  - Die Arbeiten werden immer vertraulich behandelt. Dies ist in den Regularien so verankert
+  - nur bei zwingend notwendigem Bedarf 
+  - verhindert die Verwendung oder Veröffentlichung der Ergebnisse der Arbeit in anderen wissenschaftlichen Arbeiten
+  - mit Unternehmen klären
+
 - Einleitung
   - Ein Kapitel 
   - Einführung in das Thema
@@ -141,7 +242,7 @@ Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigte
   - Verwendungszweck und Anwendungsgebiet der Ergebnisse
 
 **Literatur und Zitierweise**
-- Verwendung qualitativ und quantitativ angemessener Literatur und Quellen 
+- Verwendung qualitativ angemessener Literatur und Quellen 
   - Wissenschaftliche Literatur steht qualitativ vor nicht-wissenschaftlicher Literatur und grauer Literatur
   - Berücksichtigung des aktuellen Standes wissenschaftlicher Forschung
   - Wissenschaftliche Literatur
@@ -150,23 +251,31 @@ Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigte
     - Fachbücher, Artikel in Zeitschriften, fachliche Dokumenationen, Handbücher, Lexika, Zeitungsartikel, etc.
   - graue Literatur - stets abschätzen, ob sie überhaupt verwendet werden soll
     - Vorabveröffentlichungen, Wikipedia 
-
+  
 - Kritische Auseinandersetzung mit der zu verwendenden Literatur
+  - Qualität und richtige Auswahl sind entscheidend
+  - Literaturverzeichnis spiegelt die tatsächlich in der Arbeit verwendete Literatur wider, nicht mehr und nicht weniger 
+  - keine Literatur oder Verweise verwenden, auf die der Leser nicht zugreifen kann 
+    - Bspwse. Diskussionen, Gespräche, interne Dokumente ohne Zugriffsmöglichkeit
 
 - Korrekte Widerspiegelung der im Literaturverzeichnis ausgewiesenen Literatur im Text der Arbeit
+  
+- Formal korrekte Darstellung und vollständige Angabe der verwendeten Literatur im Literaturverzeichnis. Mehrere Möglichkeiten; Absprache mit dem wissenschaftlichen Betreuer. 
+  - Autoren
+  - Titel
+  - Name der wiss. Zeitschrift
+  - Version
+  - Verlag
+  - Jahr
+  - ggf. URL (Internet)
 
-- Korrekte Daten der verwendeten Literatur
-  - Fehlerfreie Quellenangaben
-  - Richtige Version
+- Korrekte Zitierweise der Literatur im Text. Mehrere Möglichkeiten; Absprache mit dem wissenschaftlichen Betreuer. 
 
 - Angemessenes Zitieren im Text
-  - unnötiges Zitieren, fehlende Referenzen
-  - Ausmaß wörtlichen Zitierens
+  - fehlende Referenzen und übermäßiges Zitieren vermeiden 
+  - Ausmaß wörtlichen Zitierens soweit wie möglich reduzieren
   - eindeutige Erkennbarkeit übernommenen Gedankenguts
   - Vollständigkeit der Angaben aus den Quellen
-
-- Korrekte Zitierweise und Darstellung des Literaturverzeichnisses
-  - Mehrere Arten möglich. Absprache mit dem wissenschaftlichen Betreuer.
 
 **Verschiedenes**
 - Gliederung der Abschnitte: I. d. R. höchstens zwei weitere Gliederungsebenen unter der Kapitelebene
@@ -194,7 +303,7 @@ Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigte
   - Nur einen Absatztyp verwenden 
   - Festgelegte Abstände zwischen Überschriften, Absätzen, Abschnitten verwenden
   
-## Tipps
+## Weitere Informationen und Tipps
 
 - Nicht auf notwendige Vorarbeiten Dritter – auch innerhalb des Unternehmens – verlassen
   - z. B. Infrastruktur, Daten, Testfälle, Interviews, etc.
@@ -205,9 +314,14 @@ Gemäß der inhaltlichen und formalen Vorgaben der im Studiengang ausgehändigte
   - Vgl. [Wikipedia: Leerzeichen in Komposita](https://de.wikipedia.org/wiki/Leerzeichen_in_Komposita)
   - Vgl. [Duden: Bindestrich](https://www.duden.de/sprachwissen/rechtschreibregeln/bindestrich) und [Duden: Schreibung von Fremdwörtern aus dem Englischen](https://www.duden.de/sprachwissen/sprachratgeber/Schreibung-von-Fremdwortern-aus-dem-Englischen)
 
-## Literatur zum Thema "Wissenschaftliches Arbeiten" (nicht vollständig)
+- Für die Prüfungen (Projekt, Bachelor, Master) die Kurzfassung/Abstract der Arbeit als separates Dokument bereitstellen
+  - auf Deutsch und ggf. auf Englisch, wenn die Arbeit auf Englisch verfasst wurde
+
+## Literatur (Auszug)
 [1] M. Kornmeier. *Wissenschaftlich schreiben leicht gemacht: für Bachelor, Master und Dissertation*. UTB-Verlag, 4. Auflage (2011).
 
 [2] IB DHBW Mannheim. *Leitfaden zur Gestaltung wissenschaftlicher Arbeiten (Seminar-, Projekt- und Bachelorarbeiten)*. http://www.ib.dhbw-mannheim.de/fileadmin/ms/bwl-ib/Downloads_alt/Leitfaden_31.05.pdf (2011).
 
 [3] M. Karmasin und R. Ribing. *Die Gestaltung wissenschaftlicher Arbeiten: Ein Leitfaden für Facharbeit/VWA, Seminararbeiten, Bachelor-, Master-, Magister- und Diplomarbeiten sowie Dissertationen*. UTB-Verlag, 9. Auflage (2017).
+
+[4] N. Stranghörner. *Kriterien zur Bewertung von Diplom-, Bachelor- und Masterarbeiten*. https://www.uni-due.de/iml/07studium_abschlussarbeiten_bewertung.php
