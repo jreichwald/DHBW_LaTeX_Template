@@ -2,7 +2,7 @@
 
 ## Most important note:
 
-This project will not be maintained anymore. Change requests, feature requests or pull requests cannot be included. I highly suggest cloning / forking the template and adapt it to your needs. 
+__This project will not be maintained anymore.__ Change requests, feature requests or pull requests cannot be included. I highly suggest cloning / forking the template and adapt it to your needs. 
 
 ## General Notes
 * __This template is just a sample!__ Please adapt it to the requirements of your scientific advisor (i.e. adapt citation style, page margins etc.)
