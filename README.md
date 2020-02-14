@@ -1,4 +1,4 @@
-# LaTeX-Template for Project- and Bachelorthesis at DHBW Mannheim  
+# LaTeX-Template for Project- and Bachelorthesis at DHBW Mannheim - DISCONTINUED!
 
 ## Most important note:
 
