@@ -1,8 +1,8 @@
 # LaTeX-Template for Project- and Bachelorthesis at DHBW Mannheim - DISCONTINUED!
 
-## Most important note:
-
-__This project will not be maintained anymore.__ Change requests, feature requests or pull requests cannot be included. I highly suggest cloning / forking the template and adapt it to your needs. 
+__The repoitory has moved to [https://github.com/pfisterer/DHBW_LaTeX_Template](https://github.com/pfisterer/DHBW_LaTeX_Template)!__
+ 
+The template in this repository will not be maintained anymore!
 
 ## General Notes
 * __This template is just a sample!__ Please adapt it to the requirements of your scientific advisor (i.e. adapt citation style, page margins etc.)
